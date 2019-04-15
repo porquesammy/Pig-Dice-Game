@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dice Game first to 100</title>
+    <meta name="description" content="Pig Dice Game">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container">
+        <div class="p1Div">
+            <div class="p1Header">
+                <h1>Player 1<button class="currentPlayer">&#10004;</button></h1>
+            </div>
+            <div class="p1Score">25</div>
+            <div class="p1TempScoreDiv">
+                <h4 class="p1TempScore">Temp Score</h4>
+                <p class="p1TempScoreNo">5</p>
+            </div>
+        </div>
+
+        <div class="p2Div">
+            <div class="p2Header">
+                <h1>Player 2<button class="activeJS currentPlayer">&#10004;</button></h1>
+            </div>
+            <div class="p2Score">
+                <p>25</p>
+            </div>
+            <div class="p2TempScoreDiv">
+                <h4 class="p2TempScore">Temp Score</h4>
+                <p class="p2TempScoreNo">5</p>
+            </div>
+        </div>
+        <div class="middleSection">
+            <div class="newGameBtn"><button><img src="./assets/add_circle_outline.png" alt="add symbol">New
+                    Game</button></div>
+            <div class="dice"><img class="diceJS" src="./assets/dice6.png" alt="dice"></div>
+            <div class="keepBtn"><button>Keep</button></div>
+            <div class="rollBtn"><button><img src="./assets/roll.png" alt="roll symbol">Roll</button></div>
+        </div>
+    </div>
+    <div class="instructions">
+            <p>Roll a ONE and lose your temp score. Press keep to secure points.</p>
+            <p>First to 100 wins.</p>
+        </div>
+
+    <script src="./script.js" async defer></script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter);
+@import url(https://fonts.googleapis.com/css?family=Balthazar);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bitter', serif;
+}
+
+html,
+body {
+    background-image: url(./assets/trainBackground.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-40%, 30%);
+    align-items: center;
+    width: 700px;
+}
+
+.p1Div {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    background-color: #f8f8f8;
+    height: 470px;
+    margin: auto;
+}
+
+.p1Header,
+.p2Header {
+    margin: auto;
+    margin-top: 50px;
+    width: 167px;
+    height: 53px;
+    text-align: center;
+    color: #444444;
+}
+
+
+.p1Score,
+.p2Score {
+    margin: auto;
+    font-size: 75px;
+    color: #444444;
+    position: relative;
+    transform: translate(0%, -13%);
+}
+
+.p1TempScore,
+.p2TempScore {
+    font-family: 'Balthazar', serif;
+    font-size: 1rem;
+    text-align: center;
+    color: #444444;
+    font-weight: 100;
+}
+
+.p1TempScoreNo,
+.p2TempScoreNo {
+    position: relative;
+    margin: auto;
+    font-family: 'Balthazar', serif;
+    font-size: 40px;
+    color: #444444;
+    margin-bottom: 12px;
+}
+
+.p1TempScoreDiv,
+.p2TempScoreDiv {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 100;
+    margin: auto;
+    font-family: 'Balthazar', serif;
+    text-align: center;
+    color: #444444;
+    width: 115px;
+    height: 77px;
+    background-color: #ffe396;
+    margin-bottom: 4rem;
+}
+
+.p2Div {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    background-color: #d8d8d8;
+    height: 470px;
+}
+
+.middleSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 50%;
+    transform: translate(0,-13%);
+}
+
+.instructions {
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 600px;
+    position: relative;
+    align-self: flex-end;
+    font-family: 'Balthazar', sans-serif;
+    font-size: .80rem;
+    color: #444444;
+    text-align: center;
+    transform:translate(1.5%,330%);   
+}
+
+.keepBtn {
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    transform: translate(0%, 370%);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 82px;
+    height: 26px;
+    background: none;
+}
+
+.currentPlayer {
+    display:none;
+    position: relative;
+    left: 10%;
+    transform:translate(0, -30%);
+    background-color: #82c836;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    color: rgb(253, 253, 253);
+    font-size: 0.65rem;
+    padding-top: .1rem;
+    font-weight: 100;
+}
+
+.keepBtn button {
+    color: rgb(253, 253, 253);
+    border-radius: 9px;
+    background-color: #82c836;
+}
+
+.diceJS {
+    width: 94px;
+    height: 90px;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.newGameBtn{
+    position: relative;
+    transform: translate(0%, -425%);
+}
+.newGameBtn img{
+    height: .75rem;
+    transform: translate(-25%,15%);
+}
+
+.rollBtn { 
+    position:relative;
+    transform: translate(0%, 405%);
+}
+.rollBtn img {
+    height: .75rem;
+    transform: translate(-25%, 15%);
+}
+
+.activeJS{
+    display:inline-block;
+}
