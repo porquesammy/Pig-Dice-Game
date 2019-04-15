@@ -22,6 +22,8 @@ function newGame() {
         player2.classList.remove('activeJS');
         player1.classList.add('activeJS');
         currentPlayer = 'p1';
+        p1Score.style.color = '#444444';
+        p2Score.style.color = '#444444';
 }
 
 newGame();
